@@ -5,6 +5,10 @@ This futuristic and visually dynamic webpage is designed to serve as a central h
 
 > 🌟 Features blinking stars, slide-up animations, hover effects, and more to give a space-themed cinematic feel.
 
+## 🎥 Demo
+
+![Linktree Demo](assets/demo.gif)
+
 
 ## 🚀 Features
 
