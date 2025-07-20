@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>MOVIE CON 2024</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      overflow: auto; 
+      position: relative; 
+    }
+
+    /* Star animation */
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      animation: blink 3s infinite; 
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .link-tree ul li.event {
+  margin-bottom: 10px;
+  border: 1px solid #FFD700; 
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 0; 
+  animation: slideUp 1s ease forwards; 
+  
+}
+
+    
+
+
+    /* STAR POSITIONS*/
+    .star:nth-child(1) { top: 10%; left: 20%; animation-delay: 2.3s; }
+    .star:nth-child(2) { top: 25%; left: 50%; animation-delay: 1.7s; }
+    .star:nth-child(3) { top: 50%; left: 80%; animation-delay: 2.9s; }
+    .star:nth-child(4) { top: 30%; left: 10%; animation-delay: 2.1s; }
+    .star:nth-child(5) { top: 80%; left: 70%; animation-delay: 1.5s; }
+    .star:nth-child(6) { top: 15%; left: 80%; animation-delay: 2.7s; }
+    .star:nth-child(7) { top: 70%; left: 20%; animation-delay: 2.0s; }
+    .star:nth-child(8) { top: 40%; left: 90%; animation-delay: 1.4s; }
+    .star:nth-child(9) { top: 60%; left: 40%; animation-delay: 2.6s; }
+    .star:nth-child(10) { top: 90%; left: 60%; animation-delay: 1.8s; }
+    .star:nth-child(11) { top: 15%; left: 30%; animation-delay: 2.2s; }
+    .star:nth-child(12) { top: 10%; left: 5%; animation-delay: 1.7s; }
+    .star:nth-child(13) { top: 85%; left: 15%; animation-delay: 2.3s; }
+    .star:nth-child(14) { top: 2%; left: 50%; animation-delay: 1.9s; }
+    .star:nth-child(15) { top: 90%; left: 25%; animation-delay: 2.8s; }
+    .star:nth-child(16) { top: 50%; left: 4%; animation-delay: 2.5s; }
+    .star:nth-child(17) { top: 62%; left: 85%; animation-delay: 1.6s; }
+    .star:nth-child(18) { top: 83%; left: 5%; animation-delay: 2.4s; }
+    .star:nth-child(19) { top: 15%; left: 75%; animation-delay: 2.7s; }
+    .star:nth-child(20) { top: 28%; left: 80%; animation-delay: 1.8s; }
+    .star:nth-child(21) { top: 48%; left: 15%; animation-delay: 2.3s; }
+    .star:nth-child(22) { top: 93%; left: 95%; animation-delay: 1.5s; }
+    .star:nth-child(23) { top: 94%; left: 35%; animation-delay: 2.6s; }
+    .star:nth-child(24) { top: 46%; left: 65%; animation-delay: 1.9s; }
+    .star:nth-child(25) { top: 62%; left: 32%; animation-delay: 2.7s; }
+    .star:nth-child(26) { top: 83%; left: 70%; animation-delay: 1.4s; }
+    .star:nth-child(27) { top: 63%; left: 10%; animation-delay: 2.2s; }
+    .star:nth-child(28) { top: 90%; left: 2%; animation-delay: 1.6s; }
+    .star:nth-child(29) { top: 40%; left: 13%; animation-delay: 2.5s; }
+    .star:nth-child(30) { top: 12%; left: 87%; animation-delay: 1.7s; }
+    .star:nth-child(31) { top: 25%; left: 19%; animation-delay: 2.4s; }
+    .star:nth-child(32) { top: 10%; left: 62%; animation-delay: 1.5s; }
+    .star:nth-child(33) { top: 80%; left: 25%; animation-delay: 2.3s; }
+    .star:nth-child(34) { top: 50%; left: 39%; animation-delay: 1.8s; }
+    .star:nth-child(35) { top: 65%; left: 57%; animation-delay: 2.6s; }
+    .star:nth-child(36) { top: 70%; left: 12%; animation-delay: 1.9s; }
+    .star:nth-child(37) { top: 40%; left: 86%; animation-delay: 2.5s; }
+    .star:nth-child(38) { top: 20%; left: 53%; animation-delay: 1.6s; }
+    .star:nth-child(39) { top: 90%; left: 48%; animation-delay: 2.4s; }
+    .star:nth-child(40) { top: 55%; left: 23%; animation-delay: 1.7s; }
+    .star:nth-child(41) { top: 5%; left: 97%; animation-delay: 1.9s; }
+    .star:nth-child(42) { top: 85%; left: 86%; animation-delay: 2.5s; }
+    .star:nth-child(43) { top: 20%; left: 69%; animation-delay: 1.6s; }
+    .star:nth-child(44) { top: 90%; left: 78%; animation-delay: 2.4s; }
+    .star:nth-child(45) { top: 55%; left: 92%; animation-delay: 1.7s; }
+    
+    .link-tree {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #111; 
+      box-shadow: 0 0 20px 10px rgb(234, 255, 0); 
+      text-align: center;
+      position: relative; 
+      z-index: 1; 
+    }
+
+    .link-tree h1 {
+      font-family: 'Orbitron', sans-serif; 
+      color: #FFD700; 
+      font-size: 40px; 
+    }
+
+    .link-tree ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .link-tree ul li.event {
+      margin-bottom: 10px;
+      border: 1px solid #FFD700; 
+      border-radius: 5px;
+      padding: 10px;
+      opacity: 0; 
+      animation: slideUp 1s ease forwards; 
+      transition: transform 0.3s; 
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+
+    /* EVENT DELAYS */
+    .link-tree ul li.event:nth-child(1) { animation-delay: 0.5s; }
+    .link-tree ul li.event:nth-child(2) { animation-delay: 1s; }
+    .link-tree ul li.event:nth-child(3) { animation-delay: 1.5s; }
+    .link-tree ul li.event:nth-child(4) { animation-delay: 2.0s; }
+    .link-tree ul li.event:nth-child(5) { animation-delay: 2.5s; }
+    .link-tree ul li.event:nth-child(6) { animation-delay: 3s; }
+    .link-tree ul li.event:nth-child(7) { animation-delay: 3.5s; }
+    .link-tree ul li.event:nth-child(8) { animation-delay: 4s; }
+    .link-tree ul li.event:nth-child(9) { animation-delay: 4.5s; }
+    .link-tree ul li.event:nth-child(10) { animation-delay: 5.0s; }
+    
+
+    .link-tree ul li.event:hover {
+      transform: scale(1.1); /* Scale up on hover */
+    }
+
+    .link-tree ul li.event a {
+      text-decoration: none;
+      color: #FFD700; 
+      font-weight: bold;
+    }
+
+    .link-tree ul li.event a:hover {
+      color: #fff; 
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="background-video">
+    <source src="C:\Users\nanda\Videos\Captures" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!--calling stars-->
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+
+
+  <div class="link-tree">
+    <h1 id="fest-title">MOVIE CON 2024</h1>
+    <ul>
+      <li class="event"><a href="event1.html">Event 1</a></li>
+      <li class="event"><a href="event2.html">Event 2</a></li>
+      <li class="event"><a href="event3.html">Event 3</a></li>
+      <li class="event"><a href="event4.html">Event 4</a></li>
+      <li class="event"><a href="event5.html">Event 5</a></li>
+      <li class="event"><a href="event1.html">Event 6</a></li>
+      <li class="event"><a href="event2.html">Event 7</a></li>
+      <li class="event"><a href="event3.html">Event 8</a></li>
+      <li class="event"><a href="event4.html">Event 9</a></li>
+      <li class="event"><a href="event5.html">Event 10</a></li>
+      <!-- Add more events as needed -->
+    </ul>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
